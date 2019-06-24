@@ -504,6 +504,9 @@ const init = function() {
             );
           }
         })(),
+        bmcButtonClicked: () => {
+          fbq && fbq('InitiateCheckout');
+        },
     },
     computed: {
       duplicates: function() {
@@ -538,12 +541,21 @@ const init = function() {
 
     onTokenReceived(token);
 
+    if (global.fbq) {
+      fbq('track', 'dedup-user-logged-in');
+    }
+
     function onPlaylistProcessed(playlist) {
       playlist.processed = true;
       var remaining = app.toProcess - 1;
       app.toProcess -= 1;
-      if (remaining === 0 && global.ga) {
-        ga('send', 'event', 'spotify-dedup', 'library-processed');
+      if (remaining === 0) {
+        if (global.ga) {
+          ga('send', 'event', 'spotify-dedup', 'library-processed');
+        }
+        if (global.fbq) {
+          fbq('track', 'dedup-library-processed');
+        }
       }
     }
 
@@ -1634,4 +1646,4 @@ module.exports = g;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.e094fb45f21d07a2c51b.js.map
+//# sourceMappingURL=main.85e8c96df360e01048b6.js.map
