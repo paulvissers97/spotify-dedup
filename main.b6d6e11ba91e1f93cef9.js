@@ -505,7 +505,7 @@ const init = function() {
           }
         })(),
         bmcButtonClicked: () => {
-          fbq && fbq('InitiateCheckout');
+          fbq && fbq('track', 'InitiateCheckout');
         },
     },
     computed: {
@@ -1646,4 +1646,4 @@ module.exports = g;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.85e8c96df360e01048b6.js.map
+//# sourceMappingURL=main.b6d6e11ba91e1f93cef9.js.map
