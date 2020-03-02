@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/><meta name="next-head-count" content="2"/><link rel="preload" href="/spotify-dedup/_next/static/TugCMRP-AvZxncBNCoVew/pages/_app.js" as="script"/><link rel="preload" href="/spotify-dedup/_next/static/runtime/webpack-035ac2b14bde147cb4a8.js" as="script"/><link rel="preload" href="/spotify-dedup/_next/static/chunks/commons.f9af5aa60391f0020331.js" as="script"/><link rel="preload" href="/spotify-dedup/_next/static/runtime/main-0f3660c2198e434f6af5.js" as="script"/></head><body><div id="__next"><div style="color:#000;background:#fff;font-family:-apple-system, BlinkMacSystemFont, Roboto, &quot;Segoe UI&quot;, &quot;Fira Sans&quot;, Avenir, &quot;Helvetica Neue&quot;, &quot;Lucida Grande&quot;, sans-serif;height:100vh;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center"><div><style>body { margin: 0 }</style><h1 style="display:inline-block;border-right:1px solid rgba(0, 0, 0,.3);margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"dataManager":"[]","props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"TugCMRP-AvZxncBNCoVew","assetPrefix":"/spotify-dedup","nextExport":true}</script><script nomodule="" src="/spotify-dedup/_next/static/runtime/polyfills-f5af81b00d12d923ec0f.js"></script><script async="" data-next-page="/_app" src="/spotify-dedup/_next/static/TugCMRP-AvZxncBNCoVew/pages/_app.js"></script><script src="/spotify-dedup/_next/static/runtime/webpack-035ac2b14bde147cb4a8.js" async=""></script><script src="/spotify-dedup/_next/static/chunks/commons.f9af5aa60391f0020331.js" async=""></script><script src="/spotify-dedup/_next/static/runtime/main-0f3660c2198e434f6af5.js" async=""></script><script>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/><meta name="next-head-count" content="2"/><link rel="preload" href="/spotify-dedup/_next/static/Q5hEDsfrY4_sCUL78trhA/pages/_app.js" as="script"/><link rel="preload" href="/spotify-dedup/_next/static/runtime/webpack-035ac2b14bde147cb4a8.js" as="script"/><link rel="preload" href="/spotify-dedup/_next/static/chunks/commons.f9af5aa60391f0020331.js" as="script"/><link rel="preload" href="/spotify-dedup/_next/static/runtime/main-0f3660c2198e434f6af5.js" as="script"/></head><body><div id="__next"><div style="color:#000;background:#fff;font-family:-apple-system, BlinkMacSystemFont, Roboto, &quot;Segoe UI&quot;, &quot;Fira Sans&quot;, Avenir, &quot;Helvetica Neue&quot;, &quot;Lucida Grande&quot;, sans-serif;height:100vh;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center"><div><style>body { margin: 0 }</style><h1 style="display:inline-block;border-right:1px solid rgba(0, 0, 0,.3);margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"dataManager":"[]","props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"Q5hEDsfrY4_sCUL78trhA","assetPrefix":"/spotify-dedup","nextExport":true}</script><script nomodule="" src="/spotify-dedup/_next/static/runtime/polyfills-f5af81b00d12d923ec0f.js"></script><script async="" data-next-page="/_app" src="/spotify-dedup/_next/static/Q5hEDsfrY4_sCUL78trhA/pages/_app.js"></script><script src="/spotify-dedup/_next/static/runtime/webpack-035ac2b14bde147cb4a8.js" async=""></script><script src="/spotify-dedup/_next/static/chunks/commons.f9af5aa60391f0020331.js" async=""></script><script src="/spotify-dedup/_next/static/runtime/main-0f3660c2198e434f6af5.js" async=""></script><script>
       if (
         window.location.host === 'jmperezperez.com' &&
         window.location.protocol != 'https:'
@@ -39,21 +39,46 @@
         ).install();
 
       }</script><script>
-          if (fbq) {
-            const observer = new PerformanceObserver((list) => {
-              for (const entry of list.getEntriesByName('first-contentful-paint')) {
-                const value = Math.round(entry.startTime);
-                fbq('trackCustom', 'fcp-v0', {value});
-                let level = 'fast';
-                if (value >= 2000) level = 'moderate';
-                if (value >= 4000) level = 'slow';
-                fbq('trackCustom', 'fcp-v0-' + level);
-                console.log('fcp-v0', {value: entry.startTime}, level);
-                observer.disconnect();
-              }
-            });
-            observer.observe({
-              type: 'paint',
-              buffered: true,
-            });
-          }</script><script src="https://cdn.ravenjs.com/3.26.2/raven.min.js" crossorigin="anonymous" defer=""></script></body></html>
+                if (fbq) {
+        try {
+          const localStorageKey = "fb-perf-v0";
+          const prevLocalStorageValue = localStorage.getItem(localStorageKey);
+          let shouldSend = true;
+          let newTime;
+          if (prevLocalStorageValue) {
+            newTime = new Date().getTime();
+            if (newTime < prevLocalStorageValue + 86400000) {
+              shouldSend = false;
+            }
+          }
+          if (shouldSend) {
+            localStorage.setItem(localStorageKey, newTime);
+            if (PerformanceObserver) {
+              const observer = new PerformanceObserver(list => {
+                for (const entry of list.getEntriesByName("first-contentful-paint")) {
+                  const value = Math.round(entry.startTime);
+                  fbq("trackCustom", "fcp-v0", { value });
+                  let level = "fast";
+                  if (value >= 2000) level = "moderate";
+                  if (value >= 4000) level = "slow";
+                  fbq("trackCustom", "fcp-v0-" + level);
+                  observer.disconnect();
+                }
+              });
+              observer.observe({
+                type: "paint",
+                buffered: true
+              });
+            } else {
+              const loadTime =
+                window.performance.timing.loadEventEnd -
+                window.performance.timing.navigationStart;
+              fbq("trackCustom", "plt-v0", { value });
+              let level = "fast";
+              if (value >= 3700) level = "moderate";
+              if (value >= 8400) level = "slow";
+              fbq("trackCustom", "plt-v0-" + level);
+            }
+          }
+        } catch (e) {}
+      }</script><script src="https://cdn.ravenjs.com/3.26.2/raven.min.js" crossorigin="anonymous" defer=""></script></body></html>
