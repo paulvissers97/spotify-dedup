@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/fr.js"],{
 
 /***/ "./components/badge.tsx":
 /*!******************************!*\
@@ -6711,21 +6711,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Findex.tsx!./":
-/*!****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Findex.tsx ***!
-  \****************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Ffr&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Ffr%2Findex.js!./":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Ffr&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Ffr%2Findex.js ***!
+  \**********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var mod = __webpack_require__(/*! ./pages/index.tsx */ "./pages/index.tsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/fr", function() {
+      var mod = __webpack_require__(/*! ./pages/fr/index.js */ "./pages/fr/index.js")
       if(true) {
-        module.hot.accept(/*! ./pages/index.tsx */ "./pages/index.tsx", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.tsx */ "./pages/index.tsx")
-          next.router.update("/", updatedPage)
+        module.hot.accept(/*! ./pages/fr/index.js */ "./pages/fr/index.js", function() {
+          if(!next.router.components["/fr"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/fr/index.js */ "./pages/fr/index.js")
+          next.router.update("/fr", updatedPage)
         })
       }
       return mod
@@ -13441,89 +13441,99 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./pages/index.tsx":
-/*!*************************!*\
-  !*** ./pages/index.tsx ***!
-  \*************************/
+/***/ "./pages/fr/index.js":
+/*!***************************!*\
+  !*** ./pages/fr/index.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_pages_index__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/pages/index */ "./components/pages/index.js");
-/* harmony import */ var _layouts_main__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../layouts/main */ "./layouts/main.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../i18n */ "./i18n.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
+/* harmony import */ var _components_pages_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/pages/index */ "./components/pages/index.js");
+/* harmony import */ var _layouts_main__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../layouts/main */ "./layouts/main.js");
+var _this = undefined,
+    _jsxFileName = "/Users/jmperez/github/spotify-dedup/pages/fr/index.js";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["useTranslation"])(),
+      t = _useTranslation.t,
+      i18n = _useTranslation.i18n;
 
-
-var _jsxFileName = "/Users/jmperez/github/spotify-dedup/pages/index.tsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
-
-function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, result); }; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-
-
-
-
-
-var App = /*#__PURE__*/function (_React$Component) {
-  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(App, _React$Component);
-
-  var _super = _createSuper(App);
-
-  function App() {
-    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, App);
-
-    return _super.apply(this, arguments);
-  }
-
-  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(App, [{
-    key: "render",
-    value: function render() {
-      return __jsx(_layouts_main__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 11,
-          columnNumber: 7
-        }
-      }, __jsx(_components_pages_index__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12,
-          columnNumber: 9
-        }
-      }));
+  i18n.addResourceBundle('fr', 'translation', {
+    'menu.link-home': "Page d'accueil",
+    'home.title': 'Déduplicateur Spotify',
+    'home.description': 'Supprimez les chansons en double de vos listes de lecture et chansons enregistrées.',
+    'home.login-button': 'Connectez-vous avec Spotify',
+    'meta.title': 'Spotify Dedup - Supprimer automatiquement les chansons en double de votre bibliothèque Spotify',
+    'meta.description': 'Supprimez rapidement et facilement des chansons répétées de vos listes de lecture Spotify et de vos chansons préférées.',
+    'features.find-remove.header': 'Rechercher et supprimer',
+    'features.find-remove.body': 'Dedup vérifiez vos listes de lecture et vos chansons enregistrées dans {{- strongOpen}}votre bibliothèque Spotify{{- strongClose}}. Une fois que Dedup trouve des doublons, vous pouvez les supprimer de playlist en playlist.',
+    'features.safer.header': 'Sûr',
+    'features.safer.body': 'Dedup supprime uniquement {{- strongOpen}}les chansons en double{{- strongClose}}, laissant le reste de la liste de lecture et la collection de chansons enregistrées intactes.',
+    'features.open-source.header': 'Open source',
+    'features.open-source.body': "Vous pouvez jeter un œil au {{- linkGithubOpen}}code source sur GitHub{{- linkGithubClose}}. Cette application Web utilise {{- linkWebApiOpen}}l'API Web Spotify{{- linkWebApiClose}} pour gérer les listes de lecture et les morceaux enregistrés de l'utilisateur.",
+    'reviews.title': 'Voici ce que disent les utilisateurs',
+    'footer.author': 'Fait avec ♥ pour {{- linkOpen}}JMPerez 👨‍💻{{- linkClose}}',
+    'footer.github': 'Regardez le {{- linkOpen}}code sur GitHub 📃{{- linkClose}}',
+    'footer.bmc': 'Soutenez le projet {{- linkOpen}}en achetant un café ☕{{- linkClose}}',
+    'bmc.button': 'Achetez-moi un café',
+    'result.duplicate.reason-same-id': 'Dupliqué',
+    'result.duplicate.reason-same-data': 'Dupliqué (même nom, artiste et durée)',
+    'result.duplicate.track': '<0>{{trackName}}</0> <2>de</2> <4>{{trackArtistName}}</4>',
+    'process.status.finding': 'Recherche de doublons dans vos listes de lecture et chansons préférées…',
+    'process.status.complete': 'Traitement terminé!',
+    'process.status.complete.body': 'Vos listes de lecture et chansons préférées ont été traitées!',
+    'process.status.complete.dups.body': 'Cliquez sur le bouton {{- strongOpen}}Supprimer les doublons{{- strongClose}} pour supprimer les chansons en double de cette liste de lecture ou collection.',
+    'process.status.complete.nodups.body': "Félicitations! Vous n'avez aucun doublon dans vos listes de lecture ou dans vos chansons préférées.",
+    'process.reading-library': 'Visite de votre bibliothèque, recherche des listes de lecture créées par vous et de vos chansons préférées…',
+    'process.processing': 'À la recherche de chansons en double, attendez un instant. {{count}} liste de lecture manquante à traiter…',
+    'process.processing_plural': 'À la recherche de chansons en double, attendez un instant. {{count}} listes de lecture manquantes à traiter…',
+    'process.saved.title': 'Chansons préférées dans votre bibliothèque',
+    'process.saved.duplicates': 'Cette collection contient {{count}} chanson en double',
+    'process.saved.duplicates_plural': 'Cette collection contient {{count}} chansons en double',
+    'process.saved.remove-button': 'Supprimer les doublons',
+    'process.playlist.duplicates': 'Cette playlist contient {{count}} chanson en double',
+    'process.playlist.duplicates_plural': 'Cette playlist contient {{count}} chansons en double',
+    'process.playlist.remove-button': 'Supprimer les doublons',
+    'process.items.removed': 'Doublons supprimés'
+  });
+  i18n.changeLanguage('fr');
+  return __jsx(_layouts_main__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69,
+      columnNumber: 5
     }
-  }]);
-
-  return App;
-}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (App);
+  }, __jsx(_components_pages_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70,
+      columnNumber: 7
+    }
+  }));
+});
 
 /***/ }),
 
-/***/ 1:
-/*!********************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Findex.tsx ***!
-  \********************************************************************************************************************************/
+/***/ 5:
+/*!**************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Ffr&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Ffr%2Findex.js ***!
+  \**************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Findex.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Ffr&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Ffr%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Ffr&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Ffr%2Findex.js!./");
 
 
 /***/ }),
@@ -13539,5 +13549,5 @@ module.exports = dll_b29684ed772f9fa2503e;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=index.js.map
+},[[5,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=fr.js.map
