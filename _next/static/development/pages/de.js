@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/es.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/de.js"],{
 
 /***/ "./components/badge.tsx":
 /*!******************************!*\
@@ -6711,21 +6711,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fes&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Fes%2Findex.js!./":
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fde&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Fde%2Findex.js!./":
 /*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fes&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Fes%2Findex.js ***!
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fde&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Fde%2Findex.js ***!
   \**********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/es", function() {
-      var mod = __webpack_require__(/*! ./pages/es/index.js */ "./pages/es/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/de", function() {
+      var mod = __webpack_require__(/*! ./pages/de/index.js */ "./pages/de/index.js")
       if(true) {
-        module.hot.accept(/*! ./pages/es/index.js */ "./pages/es/index.js", function() {
-          if(!next.router.components["/es"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/es/index.js */ "./pages/es/index.js")
-          next.router.update("/es", updatedPage)
+        module.hot.accept(/*! ./pages/de/index.js */ "./pages/de/index.js", function() {
+          if(!next.router.components["/de"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/de/index.js */ "./pages/de/index.js")
+          next.router.update("/de", updatedPage)
         })
       }
       return mod
@@ -13441,9 +13441,9 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./pages/es/index.js":
+/***/ "./pages/de/index.js":
 /*!***************************!*\
-  !*** ./pages/es/index.js ***!
+  !*** ./pages/de/index.js ***!
   \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -13456,7 +13456,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_pages_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/pages/index */ "./components/pages/index.js");
 /* harmony import */ var _layouts_main__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../layouts/main */ "./layouts/main.js");
 var _this = undefined,
-    _jsxFileName = "/Users/jmperez/github/spotify-dedup/pages/es/index.js";
+    _jsxFileName = "/Users/jmperez/github/spotify-dedup/pages/de/index.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -13468,57 +13468,57 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
       t = _useTranslation.t,
       i18n = _useTranslation.i18n;
 
-  i18n.addResourceBundle('es', 'translation', {
-    'menu.link-home': 'Principal',
-    'home.title': 'Deduplicador Spotify',
-    'home.description': 'Elimina canciones duplicadas de tus playlists y canciones guardadas.',
-    'home.login-button': 'Iniciar sesión con Spotify',
-    'meta.title': 'Spotify Dedup - Elimina canciones duplicadas de tu biblioteca de Spotify automáticamente',
-    'meta.description': 'Elimina canciones repetidas de tus listas de reproducción de Spotify y canciones favoritas de una forma rápida y sencilla.',
-    'features.find-remove.header': 'Busca y elimina',
-    'features.find-remove.body': 'Dedup comprueba tus playlists y canciones guardadas en {{- strongOpen}}tu biblioteca de Spotify{{- strongClose}}. Una vez que Dedup encuentra duplicados los puedes eliminar playlist a playlist.',
-    'features.safer.header': 'Seguro',
-    'features.safer.body': 'Dedup sólo elimina {{- strongOpen}}canciones duplicadas{{- strongClose}}, dejando el resto de la lista de reproducción y colección de canciones guardadas intactos.',
-    'features.open-source.header': 'Código abierto',
-    'features.open-source.body': 'Puedes echar un ojo al {{- linkGithubOpen}}código fuente en GitHub{{- linkGithubClose}}. Esta aplicación web usa la {{- linkWebApiOpen}}Web API de Spotify{{- linkWebApiClose}} para gestionar las playlists y canciones guardadas del usuario.',
-    'reviews.title': 'Esto es lo que dicen los usuarios',
-    'footer.author': 'Hecho con ♥ por {{- linkOpen}}JMPerez 👨‍💻{{- linkClose}}',
-    'footer.github': 'Mira el {{- linkOpen}}código en GitHub 📃{{- linkClose}}',
-    'footer.bmc': 'Apoya el proyecto {{- linkOpen}}comprando un café ☕{{- linkClose}}',
-    'bmc.button': '¿Me compras un café?',
-    'result.duplicate.reason-same-id': 'Duplicado',
-    'result.duplicate.reason-same-data': 'Duplicado (mismo nombre, artista y duración)',
-    'result.duplicate.track': '<0>{{trackName}}</0> <2>de</2> <4>{{trackArtistName}}</4>',
-    'process.status.finding': 'Buscando duplicados en tus listas de reproducción y canciones favoritas…',
-    'process.status.complete': '¡Procesado completado!',
-    'process.status.complete.body': '¡Tus playlists y canciones favoritas han sido procesadas!',
-    'process.status.complete.dups.body': 'Haz click en el botón {{- strongOpen}}Eliminar duplicados{{- strongClose}} para borrar las canciones duplicadas de esa lista de reproducción o colección.',
-    'process.status.complete.nodups.body': '¡Enhorabuena! No tienes duplicados en tus listas de reproducción ni en tus canciones favoritas.',
-    'process.reading-library': 'Recorriendo tu biblioteca, encontrando las playlists creadas por ti y tus canciones favoritas…',
-    'process.processing': 'Buscando canciones duplicadas, espera un momento. Queda {{count}} playlist por procesar…',
-    'process.processing_plural': 'Buscando canciones duplicadas, espera un momento. Quedan {{count}} playlists por procesar…',
-    'process.saved.title': 'Canciones favoritas en tu biblioteca',
-    'process.saved.duplicates': 'Esta colección tiene {{count}} canción duplicada',
-    'process.saved.duplicates_plural': 'Esta colección tiene {{count}} canciones duplicadas',
-    'process.saved.remove-button': 'Eliminar duplicados en canciones favoritas',
-    'process.playlist.duplicates': 'Esta playlist tiene {{count}} canción duplicada',
-    'process.playlist.duplicates_plural': 'Esta playlist tiene {{count}} canciones duplicadas',
-    'process.playlist.remove-button': 'Eliminar duplicados de esta playlist',
-    'process.items.removed': 'Duplicados eliminados'
+  i18n.addResourceBundle('de', 'translation', {
+    'menu.link-home': 'Home',
+    'home.title': 'Spotify Deduplicator',
+    'home.description': 'Entferne doppelte Songs aus deinen Playlists und deinen Lieblingssongs.',
+    'home.login-button': 'Mit Spotify einloggen',
+    'meta.title': 'Spotify Dedup - Entferne doppelte Musiktitel automatisch aus deiner Spotify-Bibliothek',
+    'meta.description': 'Lösche schnell und einfach doppelte Songs aus deinen Spotify-Playlists und Lieblingssongs.',
+    'features.find-remove.header': 'Finden und löschen',
+    'features.find-remove.body': 'Dedup überprüft deine Playlists und Lieblingssongs in deiner {{- strongOpen}}Spotify-Bibliothek{{- strongClose}}. Sobald Dedup Duplikate gefunden hat, kannst du diese pro Playlist entfernen.',
+    'features.safer.header': 'Sicher',
+    'features.safer.body': 'Dedup entfernt nur {{- strongOpen}}doppelte Songs{{- strongClose}} und lässt den Rest der Playlist und die Lieblingssongs unberührt.',
+    'features.open-source.header': 'Open Source',
+    'features.open-source.body': 'Vielleicht möchtest du dir den {{- linkGithubOpen}}Quellcode auf GitHub{{- linkGithubClose}} ansehen. Diese Webanwendung verwendet die {{- linkWebApiOpen}}Spotify Web API{{- linkWebApiClose}}, um die Playlists und Lieblingssongs der Nutzer zu verwalten.',
+    'reviews.title': 'Das sagen die Nutzer',
+    'footer.author': 'Mit ♥ gemacht von {{- linkOpen}}JMPerez 👨‍💻{{- linkClose}}',
+    'footer.github': '{{- linkOpen}}Code auf GitHub{{- linkClose}} ansehen 📃',
+    'footer.bmc': 'Unterstütze das Projekt {{- linkOpen}}beim Kaffeekauf ☕{{- linkClose}}',
+    'bmc.button': 'Würdest du mir einen Kaffee kaufen?',
+    'result.duplicate.reason-same-id': 'Doppelt',
+    'result.duplicate.reason-same-data': 'Doppelt (Name, Künstler und Länge gleich)',
+    'result.duplicate.track': '<0>{{trackName}}</0> <2>von</2> <4>{{trackArtistName}}</4>',
+    'process.status.finding': 'Suche nach doppelten Titeln in deinen Playlists und Lieblingssongs…',
+    'process.status.complete': 'Bearbeitung abgeschlossen!',
+    'process.status.complete.body': 'Deine Playlists und Lieblingssongs wurden verarbeitet!',
+    'process.status.complete.dups.body': 'Klicke auf die Schaltfläche {{- strongOpen}}Duplikate entfernen{{- strongClose}}, um Duplikate aus der entsprechenden Playlist oder deinen Lieblingssongs zu entfernen.',
+    'process.status.complete.nodups.body': 'Glückwunsch! Du hast weder Duplikate in deinen Playlists noch in deinen Lieblingssongs.',
+    'process.reading-library': 'Deine Bibliothek wird nach Duplikaten in Playlists und deinen Lieblingssongs durchsucht…',
+    'process.processing': 'Suche nach doppelten Titeln. Bitte warte ein wenig. Es ist noch {{count}} Playlist zu verarbeiten…',
+    'process.processing_plural': 'Suche nach doppelten Titeln. Bitte warte ein wenig. Es sind noch {{count}} Playlists zu verarbeiten…',
+    'process.saved.title': 'Lieblingssongs in deiner Bibliothek',
+    'process.saved.duplicates': 'Diese Sammlung enthält {{count}} doppelten Song',
+    'process.saved.duplicates_plural': 'Diese Sammlung enthält {{count}} doppelte Songs',
+    'process.saved.remove-button': 'Duplikate entfernen',
+    'process.playlist.duplicates': 'Diese Playlist enthält {{count}} doppelten Titel',
+    'process.playlist.duplicates_plural': 'Diese Playlist enthält {{count}} doppelte Titel',
+    'process.playlist.remove-button': 'Duplikate entfernen',
+    'process.items.removed': 'Duplikate entfernt'
   });
-  i18n.changeLanguage('es');
+  i18n.changeLanguage('de');
   return __jsx(_layouts_main__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 69,
       columnNumber: 5
     }
   }, __jsx(_components_pages_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 70,
       columnNumber: 7
     }
   }));
@@ -13526,14 +13526,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 4:
+/***/ 2:
 /*!**************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fes&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Fes%2Findex.js ***!
+  !*** multi next-client-pages-loader?page=%2Fde&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Fde%2Findex.js ***!
   \**************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fes&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Fes%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fes&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Fes%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fde&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Fde%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fde&absolutePagePath=%2FUsers%2Fjmperez%2Fgithub%2Fspotify-dedup%2Fpages%2Fde%2Findex.js!./");
 
 
 /***/ }),
@@ -13549,5 +13549,5 @@ module.exports = dll_b29684ed772f9fa2503e;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=es.js.map
+},[[2,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=de.js.map
